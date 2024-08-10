@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwame Bayano Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    
+    <style>
+        .price-packages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .package {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .package h2 {
+            margin-top: 0;
+        }
+
+        .package ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .package ul li {
+            padding: 5px 0;
+        }
+
+        #prices {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically (if container has height) */
+            margin: 40px 0; /* Adjust margin as needed */
+        }
+
+        .btn a {
+            background-image: url("img/Img 2/button.png"); /* Adjust path if needed */
+            background-color: transparent;
+            color: #088178;
+            border: 0;
+            padding: 14px 80px; /* Adjust padding as needed */
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            display: inline-block; /* Ensure the button styles properly */
+            border-radius: 5px; /* Matching the button's border-radius */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover, .btn a:hover {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 643px) {
+            .btn a {
+              padding: 10px 40px; /* Adjust padding for smaller screens */
+            }
+          }
+
+
+          /*
+          */
+
+          #prices1 {
+            padding: 40px 80px;
+          }
+          
+          #prices1 .price-packages {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Adjust spacing between sections as needed */
+          }
+          
+          #prices1 .package,
+          #prices1 .booking-info {
+            background-color: #f5f5f5; /* Light background color for readability */
+            border: 1px solid #ddd; /* Border to define the section */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          }
+          
+          #prices1 .package h2,
+          #prices1 .booking-info h2 {
+            font-size: 24px;
+            color: #088178;
+            margin-bottom: 15px;
+          }
+          
+          #prices1 .package p,
+          #prices1 .booking-info ul,
+          #prices1 .booking-info p {
+            font-size: 16px;
+            color: #465b52;
+            margin: 10px 0;
+          }
+          
+          #prices1 .booking-info ul {
+            list-style-type: disc;
+            margin-left: 20px;
+          }
+          
+          @media screen and (max-width: 768px) {
+            #prices1 {
+              padding: 20px;
+            }
+          
+            #prices1 .package,
+            #prices1 .booking-info {
+              padding: 15px;
+            }
+          }
+          
+          #prices2 {
+            padding: 40px 80px;
+          }
+          
+          #prices2 .price-packages {
+            display: flex;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            gap: 20px; /* Space between the two divs */
+          }
+          
+          #prices2 .package {
+            flex: 1; /* Allows the divs to grow and fill available space equally */
+            background-color: #f5f5f5; /* Light background color for readability */
+            border: 1px solid #ddd; /* Border to define the section */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            min-width: 300px; /* Ensures a minimum width for better layout on smaller screens */
+          }
+          
+          #prices2 .package h2 {
+            font-size: 24px;
+            color: #088178;
+            margin-bottom: 15px;
+          }
+          
+          #prices2 .package ul,
+          #prices2 .package p {
+            font-size: 16px;
+            color: #465b52;
+            margin: 10px 0;
+          }
+          
+          #prices2 .package ul {
+            list-style-type: disc;
+            margin-left: 20px;
+          }
+          
+          @media screen and (max-width: 768px) {
+            #prices2 {
+              padding: 20px;
+            }
+          
+            #prices2 .price-packages {
+              flex-direction: column; /* Stacks the divs vertically on smaller screens */
+            }
+          
+            #prices2 .package {
+              padding: 15px;
+            }
+          }
+          
+    </style>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/img 1/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="prints.html">Prints</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="https://wa.me/27786844778" target="_blank"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Portfolio</h4>
+        <h1>Photography, Prices and More</h1>
+        <h2>Kwame Bayano - Services</h2>
+    </section>
+
+    <section id="events">
+
+        <section id="gallery">
+            <div class="container">
+                <div class="heading">
+                    <h3>Event <span>Photo's</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0055.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0057.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0058.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0089.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0059.jpg" alt="">
+                    </div>
+    
+                    <!-- change pictures here, the last 4 -->
+                    <div class="dream">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0079.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0076.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0086.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0078.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0087.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0091.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0092.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0090.jpg" alt="">
+                        <img src="img/img 1/products/Events/IMG-20240801-WA0088.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="section-p1">
+            <div class="price-packages">
+                <div class="package">
+                <h2>Silver Package (Photos Only)</h2>
+                <h3>R4 500</h3>
+                <ul>
+                    <li>4 hours wedding coverage</li>
+                    <li>200 - 350 High Quality Images</li>
+                    <li>1 Photographer</li>
+                    <li>1 USB Flash Drive</li>
+                    <li>Online Gallery</li>
+                </ul>
+                </div>
+
+                <div class="package">
+                <h2>Gold Package (Photos Only)</h2>
+                <h3>R9 000</h3>
+                <ul>
+                    <li>8 hours wedding coverage</li>
+                    <li>300 - 500 High Quality Images</li>
+                    <li>1 Photographer + Assistant photographer</li>
+                    <li>1 USB Flash Drive</li>
+                    <li>Online Gallery</li>
+                </ul>
+                </div>
+
+                <div class="package">
+                <h2>Platinum Package (Photo & Video)</h2>
+                <h3>R15 000</h3>
+                <ul>
+                    <li>10 hour wedding coverage</li>
+                    <li>500+ High Quality Images</li>
+                    <li>1 Photographer</li>
+                    <li>2 Videographers</li>
+                    <li>Drone Footage</li>
+                    <li>1 USB Flash Drive</li>
+                    <li>Online Gallery</li>
+                    <li>30 Page A4 Photo book</li>
+                </ul>
+                </div>
+            <div class="package">
+                    <h2>Event Pricing</h2>
+                    <ul>
+                        <li>1 hour: R1 200</li>
+                        <li>More than 1 hour: R1 000 per hour</li>
+                        <li>More than 3 hours: R850 per hour</li>
+                    </ul>
+            </div>
+            </div>
+        </section>
+
+        <section id="prices1" class="section-p1">
+            <div class="price-packages">
+                <div class="package">
+                    <h2>Transportation & Accommodation</h2>
+                    <p>Transportation & Accommodation to be provided by client if needed.</p>
+                </div>
+        
+                <div class="booking-info">
+                    <h2>BOOKING</h2>
+                    <ul>
+                        <li>A 50% non-refundable booking fee is required to secure a booking. The balance is payable 3 days before the shoot.</li>
+                        <li>Should you not show the day, you will forfeit the booking fee.</li>
+                        <li>The business operates on a first come first serve basis, meaning the hour/day booked will be given to the first client to make a deposit.</li>
+                    </ul>
+                    <p>If you have any other enquiries please do not hesitate to ask. We can design a package according to your needs and budget.</p>
+                </div>
+            </div>
+        </section>        
+
+        <div class="btn">
+                <a href="https://wa.me/27786844778" target="_blank">BOOK NOW</a>
+        </div>
+    </section>
+
+    <section id="Matric">
+
+        <section id="gallery">
+            <div class="container">
+                <div class="heading">
+                    <h3>Matric <span>Photo's</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0045.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0046.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0047.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0054.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0050.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0051.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0052.jpg" alt="">
+                        <img src="img/img 1/products//Matric/IMG-20240730-WA0053.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0055.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0056.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0057.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0058.jpg" alt="">
+                        <img src="img/img 1/products/Matric/IMG-20240730-WA0048.jpg" alt="">
+                    </div>
+                </div>
+            <div>
+        </section>
+
+        <section id="prices" class="section-p1">
+            <div class="price-packages">
+                <!-- Matric Dance Package -->
+                <div class="package">
+                    <h2>Matric Dance</h2>
+                    <h3>R 850.00</h3>
+                    <ul>
+                        <li>Formal shoot of the couple/person</li>
+                        <li>Pictures with family</li>
+                        <li>Pictures with friends</li>
+                        <li>1 location</li>
+                        <li>30 high quality images</li>
+                        <li>45 minutes shoot</li>
+                    </ul>
+                </div>
+        
+                <div class="package">
+                    <h2>Matric Farewell</h2>
+                    <h3>Rates:</h3>
+                    <ul>
+                        <li>1 Couple: R850</li>
+                        <li>3 People: R1600</li>
+                        <li>4 People: R2000</li>
+                    </ul>
+                </div>
+        
+                <div class="package">
+                    <h2>Full Day Booking</h2>
+                    <h3>R4500</h3>
+                    <ul>
+                        <li>From makeup till entrance</li>
+                    </ul>
+                </div>
+        
+                <div class="package">
+                    <h2>Options to Add On</h2>
+                    <ul>
+                        <li>Normal Size Photo: R10</li>
+                        <li>Canvas A4 Size: R250</li>
+                        <li>Canvas A3 Size: R400</li>
+                        <li>Canvas A2 Size: R500</li>
+                    </ul>
+                </div>
+            </div>          
+        </section>
+
+        <section id="prices2" class="section-p1">
+                <div class="price-packages">
+                    <!-- Booking Information -->
+                    <div class="package booking-info">
+                        <h2>BOOKING</h2>
+                        <ul>
+                            <li>A 50% non-refundable booking fee is required to secure a booking. The balance is payable the day of the shoot.</li>
+                            <li>Should you not show the day or cancel, you will forfeit the booking fee.</li>
+                            <li>The business operates on a first come first serve basis, meaning the hour/day booked will be given to the first client to make a deposit.</li>
+                        </ul>
+                        <p>If you have any other enquiries please do not hesitate to ask. We can design a package according to your needs and budget.</p>
+                    </div>
+            
+                    <!-- Sending of Images -->
+                    <div class="package sending-info">
+                        <h2>SENDING OF IMAGES</h2>
+                        <p>Our turnaround time is approximately 3 working days. Images will be sent via any of the following: WhatsApp, Email, or Pixieset.</p>
+                    </div>
+                </div>
+        </section>
+
+        <div class="btn">
+            <a href="https://wa.me/27786844778" target="_blank">BOOK NOW</a>
+        </div>
+    </section>
+
+    <section id="Studio">
+        <section id="gallery">
+            <div class="container">
+                <div class="heading">
+                    <h3>Studio <span>Photo's</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0022.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0023.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0024.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0026.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0027.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0028.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0030.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0031.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0036.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0037.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0038.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0040.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0043.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0045.jpg" alt="">
+                        <img src="img/img 1/products/Studio/IMG-20240801-WA0066.jpg" alt="">
+                    </div>
+                </div>
+            <div>
+        </section>
+
+        <section id="prices" class="section-p1">
+            <div class="price-packages">
+                <div class="package">
+                    <h2>Studio Photoshoot</h2>
+                    <h3>Details</h3>
+                    <ul>
+                        <li><strong>Backdrops:</strong> White, Black, Pink, Orange, Blue</li>
+                        <li><strong>Attire Change:</strong> Allowed</li>
+                        <li><strong>Digital Copies:</strong> R30.00 Sent via WhatsApp</li>
+                        <li><strong>Photo Printing and Digital Copies:</strong> R35.00</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="btn">
+                <a href="https://wa.me/27786844778" target="_blank">BOOK NOW</a>
+        </div>
+    </section>
+
+    <section id="Maternity">
+        <section id="gallery">
+            <div class="container">
+                <div class="heading">
+                    <h3>Maternity <span>Photo's</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0032.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0033.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0034.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0042.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0044.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0047.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0035.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0039.jpg" alt="">
+                        <img src="img/img 1/products/paternity/IMG-20240801-WA0048.jpg" alt="">
+                    </div>
+                </div>
+            <div>
+        </section>
+
+        <section id="prices" class="section-p1">
+            <div class="price-packages">
+                <div class="package">
+                    <h2>Studio Photoshoot</h2>
+                    <ul>
+                        <li><strong>Backdrops:</strong> White, Black, Pink, Orange, Blue</li>
+                        <li><strong>Attire Change:</strong> Allowed</li>
+                        <li><strong>Digital Copies:</strong> R30.00 Sent via WhatsApp</li>
+                        <li><strong>Photo Printing and Digital Copies:</strong> R35.00</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="btn">
+                <a href="https://wa.me/27786844778" target="_blank">BOOK NOW</a>
+        </div>
+    </section>
+
+    <section id="Kids ">
+        <section id="gallery">
+            <div class="container">
+                <div class="heading">
+                    <h3>Kids <span>Photo's</span></h3>
+                </div>
+                <div class="box">
+                    <div class="dream">
+                        <img src="img/img 1/products/Kids/kids birthday 2.jpg" alt="">
+                        <img src="img/img 1/products/kids/kids birthday 3.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/kids/kids birthday 4.jpg" alt="">
+                        <img src="img/img 1/products/kids/kids birthday 5.jpg" alt="">
+                    </div>
+    
+                    <div class="dream">
+                        <img src="img/img 1/products/kids/kids birthday.jpg" alt="">
+                        <img src="img/img 1/products/kids/kids birthday 3.jpg" alt="">
+                    </div>
+                </div>
+            <div>
+        </section>
+
+        <section id="prices" class="section-p1">
+            <div class="price-packages">
+                <div class="package">
+                    <h2>Studio Deco</h2>
+                    <h3>R 1,300.00</h3>
+                    <p>We do themed Studio Decorations to suit your event occasion at R1,300. <br> It includes 12 photos printed and then sent to you via WhatsApp.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="btn">
+                <a href="https://wa.me/27786844778" target="_blank">BOOK NOW</a>
+        </div>
+    </section>
+    
+    <section id="banner" class="section-m1">
+        <h4>Like what you see?</h4>
+        <h2><span>Check</span> Out More</h2>
+        <a href="https://www.instagram.com/kwamebayano__services/" target="_blank"><button class="normal">Click Me</button></a>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/img 1/logo.png" alt="">
+            <h4>Contact Details</h4>
+            <p><strong>Address:</strong> 22 Cathcart St, Queenstown, Komani, 5320</p>
+            <p><strong>Phone:</strong> +27 78 684 4778</p>
+            <p><strong>Hours:</strong> 09:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Me:</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/27786844778" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="prices.html">Prints</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>The Developer</h4>
+            <a href="https://www.instagram.com/sambest360/" target="_blank">Instagram</a>
+            <a href="https://github.com/Sambest360" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/samuel-koranteng-amoah-bampo-0528ba245/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>App coming soon for Android and IOS</p>
+            <div class="row">
+                <img src="img/Img 2/pay/app.jpg" alt="">
+                <img src="img/Img 2/pay/play.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>@ 2024, Designed by Mr SK Amoah Bampo  @ <a href="https://www.instagram.com/sambest360/">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
