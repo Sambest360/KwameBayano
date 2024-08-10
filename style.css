@@ -148,7 +148,7 @@ body {
 }
 
 #hero button {
-  background-image: url("img/Img 2/button.png");
+  background-image: url("img/Img 1/button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -298,7 +298,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("img/img 2/banner/b2.jpg");
+  background-image: url("img/img 1/banner/b2.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -330,7 +330,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("img/Img 2/banner/b14.png");
+  background-image: url("img/Img 1/banner/b14.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #041e42;
@@ -574,7 +574,7 @@ footer .copyright {
   position: relative;
   width: 100%;
   height: 40vh;
-  background-image: url('img/img 2/banner/_Kente\ Cotton\ Fabric\ Piece\ by\ Loops\ &\ Threads®\ _\ 18__\ x\ 21__\ _\ Michaels®_.jpeg');
+  background-image: url('img/img 1/banner/_Kente\ Cotton\ Fabric\ Piece\ by\ Loops\ &\ Threads®\ _\ 18__\ x\ 21__\ _\ Michaels®_.jpeg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -669,6 +669,66 @@ footer .copyright {
   text-decoration: none;
   font-weight: bolder;
   letter-spacing: 3px;
+}
+
+#events button {
+  background-image: url("img/Img 1/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#Matric button {
+  background-image: url("img/Img 1/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#Studio button {
+  background-image: url("img/Img 1/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#Maternity button {
+  background-image: url("img/Img 1/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#Kids button {
+  background-image: url("img/Img 1/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 #product1 .heading {
@@ -841,18 +901,16 @@ footer .copyright {
   border-radius: 20px;
 }
 
-/* Section Styling */
 #about-head {
   display: flex;
   justify-content: space-between;
-  gap: 20px; /* Optional: Adjust the gap between the image and content */
-  padding: 40px 0; /* Adjust padding as needed */
+  gap: 20px;
+  padding: 40px 0;
 }
 
-/* Image Wrapper */
 #about-head .imgWrapper {
   flex: 1;
-  max-width: 60%; /* Adjust the percentage to control the image width */
+  max-width: 60%;
 }
 
 #about-head .imgWrapper img {
@@ -861,32 +919,30 @@ footer .copyright {
 
 }
 
-/* Content Wrapper */
 #about-head .contentWrapper {
   flex: 1;
-  max-width: 50%; /* Adjust the percentage to control the content width */
-  padding-left: 20px; /* Optional: Add padding for spacing */
+  max-width: 50%;
+  padding-left: 20px;
   margin-right: 150px;
 }
 
 #about-head .contentWrapper h2 {
-  font-size: 36px; /* Adjust the font size */
-  color: #222; /* Ensure the text color contrasts well with the background */
+  font-size: 36px;
+  color: #222;
   margin-bottom: 20px;
   margin-left: -250px;
 }
 
 #about-head .contentWrapper p {
-  font-size: 16px; /* Adjust the font size */
+  font-size: 16px;
   color: #465b52;
-  line-height: 1.6; /* Ensure good readability */
+  line-height: 1.6;
   margin-left: -350px;
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   #about-head {
-      flex-direction: column; /* Stack image and content vertically */
+      flex-direction: column;
   }
   #about-head .imgWrapper img {
     margin-left: -100px; 
@@ -899,7 +955,7 @@ footer .copyright {
 
   #about-head .contentWrapper {
       padding-left: 0;
-      text-align: center; /* Center text for smaller screens */
+      text-align: center;
   }
 
   #about-head .contentWrapper h2 {
@@ -911,7 +967,6 @@ footer .copyright {
   }
 }
 
-/* Contact Page Styles */
 #contact-page {
   padding: 60px 80px;
   background-color: #f7f7f7;
@@ -1005,7 +1060,6 @@ footer .copyright {
   background-color: #066d5d;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   #contact-page {
       flex-direction: column;
@@ -1021,11 +1075,10 @@ footer .copyright {
   }
 }
 
-/* Remove spaces between icons */
 .social-icons a {
   text-decoration: none;
-  margin: 0;  /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
   display: inline-block;
 }
 
